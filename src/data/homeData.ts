@@ -12,7 +12,7 @@ export const listOfTopics = [
     icon: Dentist,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut animi id nemo obcaecati consequuntur a tempora facere quidem odit.',
-    link: '/usługi',
+    link: '/uslugi',
     svg: Woman,
     inverted: false,
   },
