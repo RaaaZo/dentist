@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 interface Props {
   inverted: boolean;
   description: string;
-  link: string;
+  link?: string;
   Icon: any;
   id: string;
 }
@@ -28,18 +28,21 @@ const HoverAnimations = {
   },
 };
 
-const HomeCard: React.FC<Props> = ({ inverted, description, link, Icon }) => {
+const Card: React.FC<Props> = ({ inverted, description, link, Icon }) => {
   return (
     <CardWrapper whileHover={HoverAnimations.CardHover} inverted={inverted}>
       <StyledBulbSvg inverted={inverted} />
       <InnerWrapper>
         <Icon />
         <p>{description}</p>
-        <ButtonWrapper whileHover={HoverAnimations.ButtonHover}>
-          <Button as={Link} to={link}>
-            Więcej...
-          </Button>
-        </ButtonWrapper>
+
+        {link && (
+          <ButtonWrapper whileHover={HoverAnimations.ButtonHover}>
+            <Button as={Link} to={link}>
+              Więcej...
+            </Button>
+          </ButtonWrapper>
+        )}
       </InnerWrapper>
     </CardWrapper>
   );
@@ -110,4 +113,4 @@ const StyledBulbSvg = styled(BulbSvg)<{ inverted: boolean }>`
   }
 `;
 
-export default HomeCard;
+export default Card;

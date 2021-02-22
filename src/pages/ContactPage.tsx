@@ -1,5 +1,9 @@
 import HeaderSection from 'components/molecules/HeaderSection';
 import { ReactComponent as ContactSvg } from 'assets/svg/contact.svg';
+import ContactCard from 'components/molecules/ContactCard';
+import { contactData } from 'data/contactData';
+import { ContactDataWrapper } from 'components/atoms/ContactDataWrapper';
+import Map from 'components/atoms/Map';
 
 interface HeaderSectionData {
   title: string;
@@ -22,6 +26,14 @@ const ContactPage = () => {
         title={headerSectionData.title}
         Svg={headerSectionData.Svg}
       />
+
+      <ContactDataWrapper>
+        {contactData.map(({ Icon, email, hours, phone }) => (
+          <ContactCard Icon={Icon} email={email} hours={hours} phone={phone} />
+        ))}
+      </ContactDataWrapper>
+
+      <Map />
     </>
   );
 };

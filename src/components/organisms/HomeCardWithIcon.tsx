@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import HomeCard from './HomeCard';
+import Card from '../molecules/Card';
 
 interface Props {
   inverted: boolean;
@@ -28,7 +28,7 @@ const HomeCardWithIcon: React.FC<Props> = ({
         <Svg />
       </SvgWrapper>
 
-      <HomeCard
+      <Card
         key={id}
         description={description}
         id={id}

@@ -1,4 +1,4 @@
-import HomeCardWithIcon from 'components/molecules/HomeCardWithIcon';
+import HomeCardWithIcon from 'components/organisms/HomeCardWithIcon';
 import { listOfTopics } from 'data/homeData';
 
 const HomeList: React.FC = () => {
