@@ -1,6 +1,5 @@
 import HeaderSection from 'components/molecules/HeaderSection';
 import { ReactComponent as ServicesSvg } from 'assets/svg/services.svg';
-import ServiceCard from 'components/molecules/ServiceCard';
 import ServiceCardList from 'components/molecules/ServiceCardList';
 
 interface HeaderSectionData {

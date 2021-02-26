@@ -29,26 +29,8 @@ const SingleServicePage = () => {
       <StyledSvg fill='#40A3F8' />
       <InnerWrapper>
         <motion.h1>{singleService.title}</motion.h1>
-        <motion.h3>
-          short description Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Dignissimos nobis harum nesciunt numquam totam. Accusamus
-          sapiente fugit voluptates praesentium minus repudiandae molestias,
-          doloribus, animi eaque ea quas eveniet nobis atque?
-        </motion.h3>
-        <motion.p>
-          long desc Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Consequatur beatae incidunt quis nulla sint quod, sequi rem dolore,
-          qui quas voluptatibus impedit nemo rerum mollitia labore sunt corrupti
-          et ducimus dolor magnam nam, cumque vero iusto. Voluptate explicabo
-          laudantium incidunt unde recusandae? Dicta praesentium repudiandae,
-          voluptatum non iusto ipsum error voluptate est perspiciatis expedita
-          id. Veritatis ex ea fugiat alias iusto aperiam velit eligendi
-          inventore veniam, earum reiciendis cum, blanditiis sapiente, debitis
-          tenetur harum! Cupiditate voluptas ut rem eveniet similique sed
-          consequuntur nam vero, dolorem perspiciatis tempore quasi nihil
-          dignissimos vitae ullam necessitatibus autem molestias ipsam
-          temporibus enim ipsa quis!
-        </motion.p>
+        <motion.h3>{singleService.shortDesc}</motion.h3>
+        <motion.p>{singleService.longDesc}</motion.p>
 
         <ButtonWrapper whileHover={hoverAnimation.buttonHover}>
           <Button as={Link} to='/uslugi'>
@@ -99,13 +81,16 @@ const InnerWrapper = styled(motion.div)`
   }
 
   h3 {
-    margin-top: 3rem;
-    font-size: 2rem;
+    margin: 3rem auto;
+    font-size: 1.8rem;
   }
 
   p {
     margin-top: 5rem;
     font-size: 1.6rem;
+    text-align: justify;
+    white-space: pre-line;
+    line-height: 150%;
   }
 
   @media (min-width: 768px) {
@@ -120,7 +105,7 @@ const InnerWrapper = styled(motion.div)`
     }
 
     p {
-      font-size: 1.8rem;
+      font-size: 1.9rem;
     }
   }
 

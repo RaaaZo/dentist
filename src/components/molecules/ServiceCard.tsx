@@ -21,7 +21,7 @@ const HoverAnimations = {
     scale: 0.8,
   },
   CardHover: {
-    scale: 1.2,
+    scale: 1.1,
   },
 };
 
@@ -52,7 +52,7 @@ const ServiceWrapper = styled(motion.div)`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 5rem auto;
+  margin: 5rem 2rem;
   border: 2px solid ${({ theme }) => theme.blue};
   border-radius: 15px;
 
@@ -67,7 +67,7 @@ const ServiceWrapper = styled(motion.div)`
   }
 
   @media (min-width: 1024px) {
-    max-width: 350px;
+    max-width: 300px;
   }
 `;
 

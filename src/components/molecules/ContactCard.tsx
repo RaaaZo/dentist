@@ -67,6 +67,7 @@ const CardWrapper = styled.div`
     font-size: 1.8rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    cursor: text;
   }
 `;
 

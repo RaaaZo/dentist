@@ -16,13 +16,15 @@ const ServiceCardList = () => {
 const CardListWrapper = styled(motion.div)`
   width: 100%;
   max-width: 1360px;
-  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 2rem;
 
   @media (min-width: 680px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin: 5rem auto;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
   }
 `;
 

@@ -9,7 +9,6 @@ const PageWrapperComponent = styled.div`
   min-height: 90vh;
   background: rgba(255, 255, 255, 0.8);
   margin: 3rem auto;
-  padding-bottom: 1rem;
   border-radius: 15px;
   z-index: 2;
   backdrop-filter: blur(0.5rem);

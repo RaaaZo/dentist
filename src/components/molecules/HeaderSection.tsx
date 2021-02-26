@@ -16,10 +16,11 @@ const HeaderSection: React.FC<Props> = ({
   home,
 }) => {
   const StyledSvg = styled(Svg)<Props>`
-    width: ${(props) => (props.home ? '150px' : '100%')};
+    display: block;
+    width: ${(props) => (props.home ? '150px' : '95%')};
     height: 300px;
     position: ${(props) => (props.home ? 'absolute' : 'static')};
-    margin-top: 2rem;
+    margin: 2rem auto;
     top: 2rem;
 
     @media (min-width: 736px) {
@@ -78,8 +79,8 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
 
   h1,
   h2 {
+    margin-top: ${(props) => (props.home ? '2rem' : 0)};
     font-size: 2rem;
-    margin-top: 5rem;
   }
 
   p {
@@ -120,7 +121,7 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
 const StyledParagraph = styled.p`
   text-align: justify;
   font-size: 1.6rem;
-  margin: 7rem 1rem 5rem 1rem;
+  margin: 6rem 1rem 2rem 1rem;
   text-align-last: center;
 
   @media (min-width: 736px) {
