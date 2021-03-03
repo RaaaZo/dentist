@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/dentist/static/js/main.3aa858d4.chunk.js",
-    "main.js.map": "/dentist/static/js/main.3aa858d4.chunk.js.map",
+    "main.js": "/dentist/static/js/main.7c287765.chunk.js",
+    "main.js.map": "/dentist/static/js/main.7c287765.chunk.js.map",
     "runtime-main.js": "/dentist/static/js/runtime-main.ae535b05.js",
     "runtime-main.js.map": "/dentist/static/js/runtime-main.ae535b05.js.map",
     "static/js/2.9d516c82.chunk.js": "/dentist/static/js/2.9d516c82.chunk.js",
@@ -36,6 +36,6 @@
   "entrypoints": [
     "static/js/runtime-main.ae535b05.js",
     "static/js/2.9d516c82.chunk.js",
-    "static/js/main.3aa858d4.chunk.js"
+    "static/js/main.7c287765.chunk.js"
   ]
 }
