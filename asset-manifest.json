@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.js": "/dentist/static/js/main.5d403f0f.chunk.js",
+    "main.js.map": "/dentist/static/js/main.5d403f0f.chunk.js.map",
+    "runtime-main.js": "/dentist/static/js/runtime-main.ae535b05.js",
+    "runtime-main.js.map": "/dentist/static/js/runtime-main.ae535b05.js.map",
+    "static/js/2.9d516c82.chunk.js": "/dentist/static/js/2.9d516c82.chunk.js",
+    "static/js/2.9d516c82.chunk.js.map": "/dentist/static/js/2.9d516c82.chunk.js.map",
+    "index.html": "/dentist/index.html",
+    "static/js/2.9d516c82.chunk.js.LICENSE.txt": "/dentist/static/js/2.9d516c82.chunk.js.LICENSE.txt",
+    "static/media/404.33926bd5.svg": "/dentist/static/media/404.33926bd5.svg",
+    "static/media/blue-heart.fa490061.svg": "/dentist/static/media/blue-heart.fa490061.svg",
+    "static/media/building-1.4ccce4c2.jpg": "/dentist/static/media/building-1.4ccce4c2.jpg",
+    "static/media/building-vector.b34864e9.svg": "/dentist/static/media/building-vector.b34864e9.svg",
+    "static/media/building.262f05ba.svg": "/dentist/static/media/building.262f05ba.svg",
+    "static/media/bulb.e4784736.svg": "/dentist/static/media/bulb.e4784736.svg",
+    "static/media/contact.b1f0e872.svg": "/dentist/static/media/contact.b1f0e872.svg",
+    "static/media/dentist.140a06d3.svg": "/dentist/static/media/dentist.140a06d3.svg",
+    "static/media/doctor.a4f54627.svg": "/dentist/static/media/doctor.a4f54627.svg",
+    "static/media/email.8f433de4.svg": "/dentist/static/media/email.8f433de4.svg",
+    "static/media/hours.acfd996e.svg": "/dentist/static/media/hours.acfd996e.svg",
+    "static/media/location-vector.c5229d0c.svg": "/dentist/static/media/location-vector.c5229d0c.svg",
+    "static/media/location.4bd53f8d.svg": "/dentist/static/media/location.4bd53f8d.svg",
+    "static/media/logo.268f1dbf.svg": "/dentist/static/media/logo.268f1dbf.svg",
+    "static/media/menu-logo.7ee2580f.svg": "/dentist/static/media/menu-logo.7ee2580f.svg",
+    "static/media/menu.d8e139b6.svg": "/dentist/static/media/menu.d8e139b6.svg",
+    "static/media/office-vector.a6d71782.svg": "/dentist/static/media/office-vector.a6d71782.svg",
+    "static/media/office.b99e3d9d.svg": "/dentist/static/media/office.b99e3d9d.svg",
+    "static/media/phone.85c805db.svg": "/dentist/static/media/phone.85c805db.svg",
+    "static/media/services-vector.00e7087a.svg": "/dentist/static/media/services-vector.00e7087a.svg",
+    "static/media/services.2ec7c24b.svg": "/dentist/static/media/services.2ec7c24b.svg",
+    "static/media/single-service.1524284e.svg": "/dentist/static/media/single-service.1524284e.svg",
+    "static/media/white-heart.49840369.svg": "/dentist/static/media/white-heart.49840369.svg",
+    "static/media/woman.e2c918b1.svg": "/dentist/static/media/woman.e2c918b1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae535b05.js",
+    "static/js/2.9d516c82.chunk.js",
+    "static/js/main.5d403f0f.chunk.js"
+  ]
+}
