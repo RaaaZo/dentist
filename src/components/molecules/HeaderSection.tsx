@@ -45,7 +45,7 @@ const HeaderSection: React.FC<Props> = ({
 
   return (
     <StyledHeader>
-      <StyledSvg $home={home} />
+      <StyledSvg home={home} />
 
       <StyledHeaderWrapper home={home}>
         <h1>{title}</h1>

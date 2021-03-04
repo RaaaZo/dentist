@@ -5,7 +5,7 @@ const PageWrapper: React.FC = ({ children }) => {
 };
 
 const PageWrapperComponent = styled.div`
-  width: 95%;
+  width: 93%;
   min-height: 90vh;
   background: rgba(255, 255, 255, 0.8);
   margin: 3rem auto;
