@@ -5,10 +5,21 @@ import { ReactComponent as Dentist } from 'assets/svg/dentist.svg';
 import { ReactComponent as LocationIcon } from 'assets/svg/location-vector.svg';
 import { ReactComponent as Location } from 'assets/svg/location.svg';
 
-export const listOfTopics = [
+interface ListOfTopics {
+  id: string;
+  icon: React.FunctionComponent<
+    React.SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+    }
+  >;
+  description: string;
+  link: string;
+  svg: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+  inverted: boolean;
+}
+export const listOfTopics: ListOfTopics[] = [
   {
     id: '0675420c-714b-11eb-9439-0242ac130002',
-
     icon: Dentist,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut animi id nemo obcaecati consequuntur a tempora facere quidem odit.',

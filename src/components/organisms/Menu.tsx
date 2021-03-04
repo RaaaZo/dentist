@@ -15,65 +15,83 @@ const Menu = () => {
   const sidebar = {
     open: {
       x: '0',
-      width: 300,
-      height: '100vh',
-      borderRadius: '5px',
       transition: { duration: 0.4 },
     },
     closed: {
-      x: '200%',
-      width: 50,
-      height: 50,
-      borderRadius: '50%',
-      transition: { duration: 0.5 },
+      x: '100%',
+      transition: { duration: 0.2 },
     },
   };
 
   return (
-    <Nav initial={false} animate={isOpen ? 'open' : 'closed'}>
-      <MenuModal variants={sidebar}>
-        <LinkList>
-          <li>
-            <StyledLogo
-              onClick={() => {
-                onClickHandler();
-                push('/');
-              }}
-            />
-          </li>
+    <>
+      <Drawer
+        initial={false}
+        variants={sidebar}
+        animate={isOpen ? 'open' : 'closed'}
+        onClick={onClickHandler}
+      />
+      <Nav initial={false} animate={isOpen ? 'open' : 'closed'}>
+        <MenuModal variants={sidebar}>
+          <LinkList>
+            <li>
+              <StyledLogo
+                onClick={() => {
+                  onClickHandler();
+                  push('/');
+                }}
+              />
+            </li>
 
-          <li>
-            <NavLink
-              onClick={onClickHandler}
-              exact
-              activeClassName='active'
-              to='/'
-            >
-              Strona Główna
-            </NavLink>
-          </li>
-          <li>
-            <NavLink onClick={onClickHandler} to='/uslugi'>
-              Usługi
-            </NavLink>
-          </li>
-          <li>
-            <NavLink onClick={onClickHandler} to='/gabinet'>
-              Gabinet
-            </NavLink>
-          </li>
+            <li>
+              <NavLink
+                onClick={onClickHandler}
+                exact
+                activeClassName='active'
+                to='/'
+              >
+                Strona Główna
+              </NavLink>
+            </li>
+            <li>
+              <NavLink onClick={onClickHandler} to='/uslugi'>
+                Usługi
+              </NavLink>
+            </li>
+            <li>
+              <NavLink onClick={onClickHandler} to='/gabinet'>
+                Gabinet
+              </NavLink>
+            </li>
 
-          <li>
-            <NavLink onClick={onClickHandler} to='/kontakt'>
-              Kontakt
-            </NavLink>
-          </li>
-        </LinkList>
-      </MenuModal>
-      <StyledMenuSvg onClick={onClickHandler} />
-    </Nav>
+            <li>
+              <NavLink onClick={onClickHandler} to='/kontakt'>
+                Kontakt
+              </NavLink>
+            </li>
+          </LinkList>
+        </MenuModal>
+        <StyledMenuSvg onClick={onClickHandler} />
+      </Nav>
+    </>
   );
 };
+
+const Drawer = styled(motion.div)`
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+
+  @media (min-width: 550px) {
+    display: block;
+  }
+`;
 
 const StyledLogo = styled(LogoSvg)`
   cursor: pointer;
@@ -97,6 +115,7 @@ const LinkList = styled(motion.ul)`
   list-style: none;
 
   a {
+    font-size: 2.5rem;
     font-weight: bold;
     color: ${({ theme }) => theme.blue};
     text-decoration: none;
@@ -108,6 +127,18 @@ const LinkList = styled(motion.ul)`
 
     &.active {
       color: ${({ theme }) => theme.black};
+    }
+  }
+
+  @media (min-width: 550px) {
+    a {
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    a {
+      font-size: 2.5rem;
     }
   }
 
@@ -148,13 +179,25 @@ const Nav = styled(motion.nav)`
 
 const MenuModal = styled(motion.div)`
   position: fixed;
+  width: 100%;
   top: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(2rem);
-
   display: flex;
   align-items: center;
+
+  @media (min-width: 550px) {
+    width: 300px;
+  }
+
+  @media (min-width: 768px) {
+    width: 400px;
+  }
+
+  @media (min-width: 1360px) {
+    width: 500px;
+  }
 `;
 
 const StyledMenuSvg = styled(MenuSvg)`

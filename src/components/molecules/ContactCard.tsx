@@ -23,8 +23,10 @@ const ContactCard: React.FC<Props> = ({ Icon, email, hours, phone }) => {
       )}
       {hours && (
         <motion.ul>
-          {hours.map((day) => (
-            <motion.li whileHover={{ color: '#40A3F8' }}>{day}</motion.li>
+          {hours.map((day, index) => (
+            <motion.li key={index} whileHover={{ color: '#40A3F8' }}>
+              {day}
+            </motion.li>
           ))}
         </motion.ul>
       )}

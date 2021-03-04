@@ -19,7 +19,7 @@ const HeaderSection: React.FC<Props> = ({
     display: block;
     width: ${(props) => (props.home ? '150px' : '95%')};
     height: 300px;
-    position: ${(props) => (props.home ? 'absolute' : 'static')};
+    position: ${(props) => (props.home ? 'absolute' : 'relative')};
     margin: 2rem auto;
     top: 2rem;
 
@@ -44,8 +44,8 @@ const HeaderSection: React.FC<Props> = ({
   `;
 
   return (
-    <StyledSection>
-      <StyledSvg home={home} />
+    <StyledHeader>
+      <StyledSvg $home={home} />
 
       <StyledHeaderWrapper home={home}>
         <h1>{title}</h1>
@@ -54,11 +54,11 @@ const HeaderSection: React.FC<Props> = ({
       </StyledHeaderWrapper>
 
       <StyledParagraph>{description}</StyledParagraph>
-    </StyledSection>
+    </StyledHeader>
   );
 };
 
-const StyledSection = styled.section`
+const StyledHeader = styled.header`
   width: 100%;
   padding-bottom: 2rem;
 
@@ -80,7 +80,7 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
   h1,
   h2 {
     margin-top: ${(props) => (props.home ? '2rem' : 0)};
-    font-size: 2rem;
+    font-size: ${(props) => (props.home ? '2rem' : '3rem')};
   }
 
   p {
@@ -122,6 +122,8 @@ const StyledParagraph = styled.p`
   text-align: justify;
   font-size: 1.6rem;
   margin: 6rem 1rem 2rem 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align-last: center;
 
   @media (min-width: 736px) {

@@ -7,19 +7,15 @@ interface Data {
   hours?: string[];
   phone?: string;
   email?: string;
+  id: number;
 }
 
 export const contactData: Data[] = [
+  { id: 1, Icon: Phone, phone: '123-456-789' },
   {
-    Icon: Phone,
-    phone: '123-456-789',
-  },
-  {
+    id: 2,
     Icon: Hours,
     hours: ['pn: 10-20', 'wt: 10-20', 'sr: 10-20', 'czw: 10-20', 'pt: 10-20'],
   },
-  {
-    Icon: Email,
-    email: 'gabinet@test.com',
-  },
+  { id: 3, Icon: Email, email: 'gabinet@test.com' },
 ];

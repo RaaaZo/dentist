@@ -28,8 +28,14 @@ const ContactPage = () => {
       />
 
       <ContactDataWrapper>
-        {contactData.map(({ Icon, email, hours, phone }) => (
-          <ContactCard Icon={Icon} email={email} hours={hours} phone={phone} />
+        {contactData.map(({ id, Icon, email, hours, phone }) => (
+          <ContactCard
+            key={id}
+            Icon={Icon}
+            email={email}
+            hours={hours}
+            phone={phone}
+          />
         ))}
       </ContactDataWrapper>
 

@@ -1,6 +1,7 @@
 import HeaderSection from 'components/molecules/HeaderSection';
 import HomeList from 'components/organisms/HomeList';
 import { ReactComponent as DoctorSvg } from 'assets/svg/doctor.svg';
+import Loader from 'components/atoms/Loader';
 
 interface HeaderSectionData {
   title: string;

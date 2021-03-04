@@ -93,6 +93,12 @@ const InnerWrapper = styled(motion.div)`
     line-height: 150%;
   }
 
+  h3,
+  p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   @media (min-width: 768px) {
     margin-top: 5rem;
 
