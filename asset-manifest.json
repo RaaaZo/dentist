@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/dentist/static/js/main.8cbcdbf6.chunk.js",
-    "main.js.map": "/dentist/static/js/main.8cbcdbf6.chunk.js.map",
+    "main.js": "/dentist/static/js/main.656e37b8.chunk.js",
+    "main.js.map": "/dentist/static/js/main.656e37b8.chunk.js.map",
     "runtime-main.js": "/dentist/static/js/runtime-main.ae535b05.js",
     "runtime-main.js.map": "/dentist/static/js/runtime-main.ae535b05.js.map",
-    "static/js/2.db3d7dcb.chunk.js": "/dentist/static/js/2.db3d7dcb.chunk.js",
-    "static/js/2.db3d7dcb.chunk.js.map": "/dentist/static/js/2.db3d7dcb.chunk.js.map",
+    "static/js/2.08cd700e.chunk.js": "/dentist/static/js/2.08cd700e.chunk.js",
+    "static/js/2.08cd700e.chunk.js.map": "/dentist/static/js/2.08cd700e.chunk.js.map",
     "index.html": "/dentist/index.html",
-    "static/js/2.db3d7dcb.chunk.js.LICENSE.txt": "/dentist/static/js/2.db3d7dcb.chunk.js.LICENSE.txt",
+    "static/js/2.08cd700e.chunk.js.LICENSE.txt": "/dentist/static/js/2.08cd700e.chunk.js.LICENSE.txt",
     "static/media/404.d9c149e1.svg": "/dentist/static/media/404.d9c149e1.svg",
     "static/media/building-1.4ccce4c2.jpg": "/dentist/static/media/building-1.4ccce4c2.jpg",
     "static/media/building-vector.66f81158.svg": "/dentist/static/media/building-vector.66f81158.svg",
@@ -32,7 +32,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ae535b05.js",
-    "static/js/2.db3d7dcb.chunk.js",
-    "static/js/main.8cbcdbf6.chunk.js"
+    "static/js/2.08cd700e.chunk.js",
+    "static/js/main.656e37b8.chunk.js"
   ]
 }
