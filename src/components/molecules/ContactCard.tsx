@@ -45,8 +45,7 @@ const CardWrapper = styled.div`
   justify-content: space-evenly;
   align-items: center;
   margin: 5rem auto;
-  border: 2px solid ${({ theme }) => theme.blue};
-  border-radius: 15px;
+  border: 2px solid ${({ theme }) => theme.darkBlue};
 
   ul {
     display: flex;

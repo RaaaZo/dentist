@@ -15,7 +15,7 @@ const PageLogo = () => {
 const StyledLogo = styled(Logo)`
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: block;
     margin: 1rem 2.5%;
     cursor: pointer;

@@ -20,8 +20,7 @@ const Iframe = styled.iframe`
   height: 300px;
   margin: 0 auto;
   margin-bottom: 3rem;
-
-  border-radius: 15px;
+  box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.8);
 
   @media (min-width: 768px) {
     height: 400px;

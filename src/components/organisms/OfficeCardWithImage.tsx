@@ -2,7 +2,6 @@ import image from 'assets/images/building-1.jpg';
 import Card from 'components/molecules/Card';
 import { ReactComponent as Icon } from 'assets/svg/office-vector.svg';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
 interface CardWrapperInterface {
   inverted: boolean;
@@ -25,7 +24,7 @@ const OfficeCardWithImage: React.FC<{ inverted: boolean }> = ({ inverted }) => {
   );
 };
 
-const CardWrapper = styled(motion.div)`
+const CardWrapper = styled.div`
   width: 95%;
   margin: 0 auto;
   display: flex;
@@ -39,13 +38,13 @@ const CardWrapper = styled(motion.div)`
   }
 `;
 
-const ImageWrapper = styled(motion.div)<CardWrapperInterface>`
+const ImageWrapper = styled.div<CardWrapperInterface>`
   width: 100%;
   height: 300px;
   overflow: hidden;
   margin-bottom: 15rem;
-  border: 3px solid ${({ theme }) => theme.blue};
-  border-radius: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px ${({ theme }) => theme.black};
 
   @media (min-width: 768px) {
     margin-bottom: 0;

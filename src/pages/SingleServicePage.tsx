@@ -6,14 +6,6 @@ import { motion } from 'framer-motion';
 import NotFound from './404';
 import { Button } from 'components/atoms/Button';
 
-const hoverAnimation = {
-  buttonHover: {
-    backgroundColor: '#40A3F8',
-    rotateZ: 360,
-    scale: [1, 0.5, 1],
-  },
-};
-
 const SingleServicePage = () => {
   const { name } = useParams<{ name: string }>();
   const services = servicesData;
@@ -26,33 +18,25 @@ const SingleServicePage = () => {
 
   return (
     <PageWrapper>
-      <StyledSvg fill='#40A3F8' />
+      <StyledSvg />
       <InnerWrapper>
         <motion.h1>{singleService.title}</motion.h1>
         <motion.h3>{singleService.shortDesc}</motion.h3>
         <motion.p>{singleService.longDesc}</motion.p>
 
-        <ButtonWrapper whileHover={hoverAnimation.buttonHover}>
-          <Button as={Link} to='/uslugi'>
-            Wstecz
-          </Button>
-        </ButtonWrapper>
+        <StyledButton as={Link} to='/uslugi'>
+          Wstecz
+        </StyledButton>
       </InnerWrapper>
     </PageWrapper>
   );
 };
 
-const ButtonWrapper = styled(motion.div)`
-  border: 2px solid ${({ theme }) => theme.blue};
-  border-radius: 15px;
-  margin-top: 6rem;
-
-  @media (min-width: 768px) {
-    padding: 1rem 2rem;
-  }
+const StyledButton = styled(Button)`
+  margin-top: 2rem;
 `;
 
-const PageWrapper = styled(motion.div)`
+const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +47,7 @@ const StyledSvg = styled(SingleServiceSvg)`
   margin-top: 5rem;
 `;
 
-const InnerWrapper = styled(motion.div)`
+const InnerWrapper = styled.div`
   width: 95%;
   max-width: 1280px;
   margin: 3rem auto;

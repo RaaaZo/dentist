@@ -1,10 +1,11 @@
 import { ReactComponent as MenuSvg } from 'assets/svg/menu.svg';
 import { motion, useCycle } from 'framer-motion';
-import { NavLink, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import { ReactComponent as LogoSvg } from 'assets/svg/menu-logo.svg';
+import ListItem from 'components/atoms/ListItem';
 
-const Menu = () => {
+const MobileMenu = () => {
   const { push } = useHistory();
   const [isOpen, setIsOpen] = useCycle(false, true);
 
@@ -34,41 +35,25 @@ const Menu = () => {
       <Nav initial={false} animate={isOpen ? 'open' : 'closed'}>
         <MenuModal variants={sidebar}>
           <LinkList>
-            <li>
-              <StyledLogo
-                onClick={() => {
-                  onClickHandler();
-                  push('/');
-                }}
-              />
-            </li>
+            <StyledLogo
+              onClick={() => {
+                onClickHandler();
+                push('/');
+              }}
+            />
 
-            <li>
-              <NavLink
-                onClick={onClickHandler}
-                exact
-                activeClassName='active'
-                to='/'
-              >
-                Strona Główna
-              </NavLink>
-            </li>
-            <li>
-              <NavLink onClick={onClickHandler} to='/uslugi'>
-                Usługi
-              </NavLink>
-            </li>
-            <li>
-              <NavLink onClick={onClickHandler} to='/gabinet'>
-                Gabinet
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink onClick={onClickHandler} to='/kontakt'>
-                Kontakt
-              </NavLink>
-            </li>
+            <ListItem clickHandler={onClickHandler} path='/'>
+              Strona Główna
+            </ListItem>
+            <ListItem clickHandler={onClickHandler} path='/uslugi'>
+              Usługi
+            </ListItem>
+            <ListItem clickHandler={onClickHandler} path='/gabinet'>
+              Gabinet
+            </ListItem>
+            <ListItem clickHandler={onClickHandler} path='/kontakt'>
+              Kontakt
+            </ListItem>
           </LinkList>
         </MenuModal>
         <StyledMenuSvg onClick={onClickHandler} />
@@ -91,6 +76,10 @@ const Drawer = styled(motion.div)`
   @media (min-width: 550px) {
     display: block;
   }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `;
 
 const StyledLogo = styled(LogoSvg)`
@@ -100,7 +89,7 @@ const StyledLogo = styled(LogoSvg)`
     display: none;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 `;
@@ -113,34 +102,6 @@ const LinkList = styled(motion.ul)`
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
-
-  a {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: ${({ theme }) => theme.blue};
-    text-decoration: none;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: ${({ theme }) => theme.black};
-    }
-
-    &.active {
-      color: ${({ theme }) => theme.black};
-    }
-  }
-
-  @media (min-width: 550px) {
-    a {
-      font-size: 2rem;
-    }
-  }
-
-  @media (min-width: 768px) {
-    a {
-      font-size: 2.5rem;
-    }
-  }
 
   @media (orientation: landscape) and (max-width: 768px) {
     justify-content: center;
@@ -170,10 +131,7 @@ const Nav = styled(motion.nav)`
     right: 2rem;
   }
   @media (min-width: 1024px) {
-    right: 3rem;
-  }
-  @media (min-width: 1360px) {
-    right: 5rem;
+    display: none;
   }
 `;
 
@@ -195,8 +153,8 @@ const MenuModal = styled(motion.div)`
     width: 400px;
   }
 
-  @media (min-width: 1360px) {
-    width: 500px;
+  @media (min-width: 1024) {
+    display: none;
   }
 `;
 
@@ -213,11 +171,8 @@ const StyledMenuSvg = styled(MenuSvg)`
     right: 2rem;
   }
   @media (min-width: 1024px) {
-    right: 3rem;
-  }
-  @media (min-width: 1360px) {
-    right: 5rem;
+    display: none;
   }
 `;
 
-export default Menu;
+export default MobileMenu;

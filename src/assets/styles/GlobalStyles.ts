@@ -15,16 +15,16 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background: linear-gradient(270deg, #85C8F2 -1.88%, #52DDF4 100.76%);
+        background: ${({ theme }) =>
+          ` linear-gradient(270deg, ${theme.backgroundDark} -1.88%, ${theme.backgroundLight} 100.76%)`};
         font-size: 2rem;
         font-family: ${({ theme }) => theme.roboto};
         color: ${({ theme }) => theme.black};
-        cursor: default;
     }
 
     h1,h2,h3,h4,h5,h6 {
         font-family: ${({ theme }) => theme.lato};
-        
+        color: ${({ theme }) => theme.black};
     }
 
     a {

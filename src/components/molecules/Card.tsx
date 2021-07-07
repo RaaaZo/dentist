@@ -1,8 +1,6 @@
-import styled, { css } from 'styled-components';
-import { ReactComponent as BulbSvg } from 'assets/svg/bulb.svg';
+import styled from 'styled-components';
 import { Button } from 'components/atoms/Button';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 
 interface Props {
   inverted: boolean;
@@ -16,44 +14,24 @@ interface CardWrapperInterface {
   inverted: boolean;
 }
 
-const HoverAnimations = {
-  ButtonHover: {
-    backgroundColor: '#40A3F8',
-    rotateY: 180,
-    transition: { duration: 0.4, ease: 'linear' },
-  },
-  CardHover: {
-    rotate: [0, 1, 0, -1, 2, -2, 2, 0],
-    transition: { duration: 0.3 },
-  },
-};
-
 const Card: React.FC<Props> = ({ inverted, description, link, Icon }) => {
   return (
-    <CardWrapper whileHover={HoverAnimations.CardHover} inverted={inverted}>
-      <StyledBulbSvg inverted={inverted} />
+    <CardWrapper inverted={inverted}>
       <InnerWrapper>
         <Icon />
         <p>{description}</p>
 
         {link && (
-          <ButtonWrapper whileHover={HoverAnimations.ButtonHover}>
-            <Button as={Link} to={link}>
-              Więcej...
-            </Button>
-          </ButtonWrapper>
+          <Button as={Link} to={link}>
+            Więcej...
+          </Button>
         )}
       </InnerWrapper>
     </CardWrapper>
   );
 };
 
-const ButtonWrapper = styled(motion.div)`
-  border: 2px solid ${({ theme }) => theme.blue};
-  border-radius: 15px;
-`;
-
-const CardWrapper = styled(motion.div)<CardWrapperInterface>`
+const CardWrapper = styled.div<CardWrapperInterface>`
   position: relative;
   width: 100%;
   height: 500px;
@@ -70,16 +48,13 @@ const CardWrapper = styled(motion.div)<CardWrapperInterface>`
 const InnerWrapper = styled.div`
   width: 100%;
   height: 400px;
-  background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(2rem);
-  z-index: 3;
+  background-color: ${({ theme }) => theme.white};
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem 2rem;
-  border: 3px solid ${({ theme }) => theme.blue};
-  border-radius: 15px;
+  box-shadow: 0px 0px 10px 1px ${({ theme }) => theme.darkBlue};
 
   p {
     text-align: justify;
@@ -88,28 +63,6 @@ const InnerWrapper = styled.div`
 
   @media (min-width: 768px) {
     font-size: 2rem;
-  }
-`;
-
-const StyledBulbSvg = styled(BulbSvg)<{ inverted: boolean }>`
-  width: 80px;
-  height: 120px;
-  position: absolute;
-  top: -110px;
-  right: 0;
-  z-index: -1;
-
-  ${({ inverted }) =>
-    inverted &&
-    css`
-      right: auto;
-      left: 0;
-    `}
-
-  @media (min-width: 768px) {
-    width: 110px;
-    height: 160px;
-    top: -145px;
   }
 `;
 

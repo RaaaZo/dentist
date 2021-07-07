@@ -5,13 +5,20 @@ const PageWrapper: React.FC = ({ children }) => {
 };
 
 const PageWrapperComponent = styled.div`
-  width: 93%;
+  width: 100%;
   min-height: 90vh;
-  background: rgba(255, 255, 255, 0.8);
-  margin: 3rem auto;
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.7);
+  margin: auto;
+  border-radius: 5px;
   z-index: 2;
-  backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(2rem);
+  overflow: hidden;
+
+  @media (min-width: 540px) {
+    margin: 2rem auto;
+    width: 97%;
+  }
 `;
 
 export default PageWrapper;

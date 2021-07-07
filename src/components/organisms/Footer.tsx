@@ -17,8 +17,6 @@ const FooterWrapper = styled.footer`
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255, 0.8);
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
 
   h3 {
     text-align: center;
@@ -26,7 +24,7 @@ const FooterWrapper = styled.footer`
   }
 
   a {
-    color: ${({ theme }) => theme.blue};
+    color: ${({ theme }) => theme.darkBlue};
     text-decoration: none;
   }
 `;
