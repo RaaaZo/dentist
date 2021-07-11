@@ -1,6 +1,6 @@
 import { servicesData } from 'data/servicesData';
-import { motion } from 'framer-motion';
 import styled from 'styled-components';
+
 import ServiceCard from './ServiceCard';
 
 const ServiceCardList = () => {
@@ -13,7 +13,7 @@ const ServiceCardList = () => {
   );
 };
 
-const CardListWrapper = styled(motion.div)`
+const CardListWrapper = styled.div`
   width: 100%;
   max-width: 1360px;
   display: flex;

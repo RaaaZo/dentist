@@ -1,10 +1,10 @@
-import { Link, useParams } from 'react-router-dom';
-import { servicesData } from 'data/servicesData';
 import { ReactComponent as SingleServiceSvg } from 'assets/svg/single-service.svg';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import NotFound from './404';
 import { Button } from 'components/atoms/Button';
+import { servicesData } from 'data/servicesData';
+import { Link, useParams } from 'react-router-dom';
+import styled from 'styled-components';
+
+import NotFound from './404';
 
 const SingleServicePage = () => {
   const { name } = useParams<{ name: string }>();
@@ -20,9 +20,9 @@ const SingleServicePage = () => {
     <PageWrapper>
       <StyledSvg />
       <InnerWrapper>
-        <motion.h1>{singleService.title}</motion.h1>
-        <motion.h3>{singleService.shortDesc}</motion.h3>
-        <motion.p>{singleService.longDesc}</motion.p>
+        <h1>{singleService.title}</h1>
+        <h3>{singleService.shortDesc}</h3>
+        <p>{singleService.longDesc}</p>
 
         <StyledButton as={Link} to='/uslugi'>
           Wstecz
@@ -56,7 +56,6 @@ const InnerWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: justify;
-  text-align-last: center;
 
   h1 {
     margin-top: 3rem;

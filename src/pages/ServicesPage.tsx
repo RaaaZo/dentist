@@ -1,5 +1,5 @@
-import HeaderSection from 'components/molecules/HeaderSection';
 import { ReactComponent as ServicesSvg } from 'assets/svg/services.svg';
+import HeaderSection from 'components/molecules/HeaderSection';
 import ServiceCardList from 'components/molecules/ServiceCardList';
 
 interface HeaderSectionData {
@@ -10,7 +10,7 @@ interface HeaderSectionData {
 
 const headerSectionData: HeaderSectionData = {
   description:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam delectus veniam ea dignissimos cumque esse asperiores eos beatae qui!',
+    'Moje doświadczenie pozwoliło mi na zapewnienie swoim Pacjentom szeregu usług stomatologicznych, poczynając od najbardziej popularnych- stomatologii zachowawczej czy endodoncji, aż po stomatologię protetyczną. Chcę pomóc każdemu pacjentowi, który się do mnie zgłosi.',
   title: 'Usługi',
   Svg: ServicesSvg,
 };

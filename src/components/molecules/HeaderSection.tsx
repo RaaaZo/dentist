@@ -80,7 +80,7 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
   h1,
   h2 {
     margin-top: ${(props) => (props.home ? '2rem' : 0)};
-    font-size: ${(props) => (props.home ? '2rem' : '3rem')};
+    font-size: ${(props) => (props.home ? '2.5rem' : '3rem')};
   }
 
   p {
@@ -112,8 +112,8 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
       display: block;
       max-width: 500px;
       text-align: justify;
-      margin: 3rem;
-      text-align-last: center;
+      font-size: 1.6rem;
+      margin-top: 2rem;
     }
   }
 `;
@@ -121,13 +121,12 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
 const StyledParagraph = styled.p`
   text-align: justify;
   font-size: 1.6rem;
-  margin: 6rem 1rem 2rem 1rem;
+  margin: 8rem 1rem 2rem 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  text-align-last: center;
 
   @media (min-width: 736px) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }

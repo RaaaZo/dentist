@@ -1,9 +1,9 @@
-import HeaderSection from 'components/molecules/HeaderSection';
 import { ReactComponent as ContactSvg } from 'assets/svg/contact.svg';
-import ContactCard from 'components/molecules/ContactCard';
-import { contactData } from 'data/contactData';
 import { ContactDataWrapper } from 'components/atoms/ContactDataWrapper';
 import Map from 'components/atoms/Map';
+import ContactCard from 'components/molecules/ContactCard';
+import HeaderSection from 'components/molecules/HeaderSection';
+import { contactData } from 'data/contactData';
 
 interface HeaderSectionData {
   title: string;
@@ -13,7 +13,7 @@ interface HeaderSectionData {
 
 const headerSectionData: HeaderSectionData = {
   description:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam delectus veniam ea dignissimos cumque esse asperiores eos beatae qui!',
+    'Aby sprostać Państwa oczekiwaniom, proponujemy zarówno poranne jak i wieczorne godziny przyjęć.',
   title: 'Kontakt',
   Svg: ContactSvg,
 };

@@ -1,9 +1,9 @@
+import { ReactComponent as LogoSvg } from 'assets/svg/menu-logo.svg';
 import { ReactComponent as MenuSvg } from 'assets/svg/menu.svg';
+import ListItem from 'components/atoms/ListItem';
 import { motion, useCycle } from 'framer-motion';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
-import { ReactComponent as LogoSvg } from 'assets/svg/menu-logo.svg';
-import ListItem from 'components/atoms/ListItem';
 
 const MobileMenu = () => {
   const { push } = useHistory();
@@ -16,11 +16,11 @@ const MobileMenu = () => {
   const sidebar = {
     open: {
       x: '0',
-      transition: { duration: 0.4 },
+      transition: { duration: 0.6 },
     },
     closed: {
-      x: '100%',
-      transition: { duration: 0.2 },
+      x: '200%',
+      transition: { duration: 0.4 },
     },
   };
 
