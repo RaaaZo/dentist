@@ -14,6 +14,7 @@ export const Button = styled.button`
   text-decoration: none;
   position: relative;
   transition: all 0.5s;
+  border: none;
 
   &:focus {
     outline: none;

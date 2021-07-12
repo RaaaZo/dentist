@@ -1,12 +1,14 @@
-import { ReactComponent as SingleServiceSvg } from 'assets/svg/single-service.svg';
-import { Button } from 'components/atoms/Button';
 import { servicesData } from 'data/servicesData';
-import { Link, useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import styled from 'styled-components';
+import largeImage from 'assets/images/3-large.webp';
+import smallImage from 'assets/images/3-small.webp';
 
 import NotFound from './404';
+import { Button } from 'components/atoms/Button';
 
 const SingleServicePage = () => {
+  const { push } = useHistory();
   const { name } = useParams<{ name: string }>();
   const services = servicesData;
 
@@ -18,29 +20,55 @@ const SingleServicePage = () => {
 
   return (
     <PageWrapper>
-      <StyledSvg />
+      <ImageWrapper>
+        <Image
+          srcSet={`${smallImage} 780w, ${largeImage} 1920w`}
+          sizes='(max-width: 780px) 780px,
+            1920px'
+          src={largeImage}
+          alt='Doctors office'
+        />
+      </ImageWrapper>
       <InnerWrapper>
         <h1>{singleService.title}</h1>
         <h3>{singleService.shortDesc}</h3>
         <p>{singleService.longDesc}</p>
       </InnerWrapper>
+      <StyledButton onClick={() => push('/uslugi')}>Wróć do usług</StyledButton>
     </PageWrapper>
   );
 };
 
 const StyledButton = styled(Button)`
-  margin-top: 3rem;
+  margin: 2rem auto 3rem auto;
+  width: 175px;
+  height: 60px;
+`;
+
+const ImageWrapper = styled.div`
+  width: 100%;
+  height: 300px;
+  background-color: ${({ theme }) => theme.grey};
+
+  @media (min-width: 780px) {
+    height: 500px;
+  }
+
+  @media (min-width: 1360px) {
+    height: 700px;
+  }
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
 
 const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-
-const StyledSvg = styled(SingleServiceSvg)`
-  width: 100%;
-  margin-top: 5rem;
 `;
 
 const InnerWrapper = styled.div`

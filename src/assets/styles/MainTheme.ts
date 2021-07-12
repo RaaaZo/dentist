@@ -4,11 +4,11 @@ declare module 'styled-components' {
     backgroundDark: string;
     blue: string;
     black: string;
-    orange: string;
     lato: string;
     roboto: string;
     white: string;
     darkBlue: string;
+    grey: string;
   }
 }
 
@@ -19,7 +19,7 @@ export const theme = {
   darkBlue: '#3D7FDB',
   blue: '#458FF6',
   black: '#3F3D56',
-  orange: '#F56E5D',
+  grey: '#e0e0e0',
   lato: "'Lato', sans-serif",
   roboto: "'Roboto', sans-serif",
 };

@@ -112,7 +112,7 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
       display: block;
       max-width: 500px;
       text-align: justify;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       margin-top: 2rem;
     }
   }

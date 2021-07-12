@@ -16,10 +16,10 @@ const MobileMenu = () => {
   const sidebar = {
     open: {
       x: '0',
-      transition: { duration: 0.6 },
+      transition: { duration: 0.4 },
     },
     closed: {
-      x: '200%',
+      x: '100%',
       transition: { duration: 0.4 },
     },
   };

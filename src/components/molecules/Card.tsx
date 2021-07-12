@@ -34,20 +34,19 @@ const Card: React.FC<Props> = ({ inverted, description, link, Icon }) => {
 const CardWrapper = styled.div<CardWrapperInterface>`
   position: relative;
   width: 100%;
-  height: 500px;
-  margin: 0 1rem;
+  height: 400px;
+  margin: 5rem 1rem;
 
   @media (min-width: 768px) {
     width: 50%;
-    max-width: 550px;
-    height: 400px;
+    max-width: 650px;
     order: ${({ inverted }) => (inverted ? 1 : 2)};
   }
 `;
 
 const InnerWrapper = styled.div`
   width: 100%;
-  height: 400px;
+  height: 100%;
   background-color: ${({ theme }) => theme.white};
   display: flex;
   flex-direction: column;
