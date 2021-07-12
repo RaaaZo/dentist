@@ -18,7 +18,7 @@ const SingleServicePage = () => {
 
   return (
     <PageWrapper>
-      <StyledSvg />
+      {/* <StyledSvg /> */}
       <InnerWrapper>
         <motion.h1>{singleService.title}</motion.h1>
         <motion.h3>{singleService.shortDesc}</motion.h3>
@@ -33,7 +33,7 @@ const SingleServicePage = () => {
 };
 
 const StyledButton = styled(Button)`
-  margin-top: 2rem;
+  margin-top: 3rem;
 `;
 
 const PageWrapper = styled.div`
@@ -56,7 +56,6 @@ const InnerWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: justify;
-  text-align-last: center;
 
   h1 {
     margin-top: 3rem;

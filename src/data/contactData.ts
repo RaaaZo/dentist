@@ -4,18 +4,18 @@ import { ReactComponent as Email } from 'assets/svg/email.svg';
 
 interface Data {
   Icon: any;
-  hours?: string[];
-  phone?: string;
+  hours?: string;
+  phone?: string[];
   email?: string;
   id: number;
 }
 
 export const contactData: Data[] = [
-  { id: 1, Icon: Phone, phone: '123-456-789' },
+  { id: 1, Icon: Phone, phone: ['509-949-202', '730-998-577 '] },
   {
     id: 2,
     Icon: Hours,
-    hours: ['pn: 10-20', 'wt: 10-20', 'sr: 10-20', 'czw: 10-20', 'pt: 10-20'],
+    hours: 'Poniedziałek-Czwartek: 10:30- 18:30',
   },
-  { id: 3, Icon: Email, email: 'gabinet@test.com' },
+  { id: 3, Icon: Email, email: 'stomatolog@vitadent-kozanecki.pl' },
 ];

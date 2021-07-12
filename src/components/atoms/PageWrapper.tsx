@@ -18,6 +18,7 @@ const PageWrapperComponent = styled.div`
   @media (min-width: 540px) {
     margin: 2rem auto;
     width: 97%;
+    position: relative;
   }
 `;
 

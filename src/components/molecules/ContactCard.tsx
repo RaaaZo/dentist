@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
-import { motion } from 'framer-motion';
-
 interface Props {
   Icon: any;
-  hours?: string[];
-  phone?: string;
+  hours?: string;
+  phone?: string[];
   email?: string;
 }
 
@@ -14,22 +12,14 @@ const ContactCard: React.FC<Props> = ({ Icon, email, hours, phone }) => {
     <CardWrapper>
       <Icon />
       {phone && (
-        <motion.h3 whileHover={{ color: '#40A3F8' }}>{phone}</motion.h3>
-      )}
-      {email && (
-        <motion.a whileHover={{ color: '#40A3F8' }} href={`mailto: ${email}`}>
-          {email}
-        </motion.a>
-      )}
-      {hours && (
-        <motion.ul>
-          {hours.map((day, index) => (
-            <motion.li key={index} whileHover={{ color: '#40A3F8' }}>
-              {day}
-            </motion.li>
+        <ul>
+          {phone.map((number, index) => (
+            <li key={index}>{number}</li>
           ))}
-        </motion.ul>
+        </ul>
       )}
+      {email && <a href={`mailto: ${email}`}>{email}</a>}
+      {hours && <h3>{hours}</h3>}
     </CardWrapper>
   );
 };
@@ -46,6 +36,7 @@ const CardWrapper = styled.div`
   align-items: center;
   margin: 5rem auto;
   border: 2px solid ${({ theme }) => theme.darkBlue};
+  font-family: ${({ theme }) => theme.lato};
 
   ul {
     display: flex;
@@ -57,6 +48,7 @@ const CardWrapper = styled.div`
 
   li {
     list-style: none;
+    font-weight: 700;
   }
 
   a {

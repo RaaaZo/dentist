@@ -120,16 +120,15 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
 
 const StyledParagraph = styled.p`
   text-align: justify;
-  font-size: 1.6rem;
-  margin: 6rem 1rem 2rem 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  font-size: 1.8rem;
+  margin-top: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align-last: center;
 
   @media (min-width: 736px) {
+    margin-top: 12rem;
     font-size: 1.8rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
   }
 
   @media (min-width: 1024px) {

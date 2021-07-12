@@ -41,14 +41,27 @@ const HomeCardWithIcon: React.FC<Props> = ({
 };
 
 const CardWrapper = styled.div`
-  margin: 10rem auto;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 
+  &:first-of-type {
+    margin: 10rem auto;
+  }
+
   @media (min-width: 768px) {
     margin: 20rem auto;
+
+    &:nth-of-type(3) {
+      margin: 20rem auto 10rem auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &:first-of-type {
+      margin: 20rem auto;
+    }
   }
 `;
 

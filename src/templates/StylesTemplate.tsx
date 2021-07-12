@@ -1,4 +1,4 @@
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import GlobalStyles from 'assets/styles/GlobalStyles';
 import { theme } from 'assets/styles/MainTheme';
 import PageWrapper from 'components/atoms/PageWrapper';
@@ -12,6 +12,7 @@ const StylesTemplate: React.FC = ({ children }) => {
       <GlobalStyles />
       <DesktopNavigation />
       <MobileMenu />
+
       <PageWrapper>
         {children}
         <Footer />
