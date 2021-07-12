@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/dentist/static/js/main.a8787477.chunk.js",
-    "main.js.map": "/dentist/static/js/main.a8787477.chunk.js.map",
+    "main.js": "/dentist/static/js/main.6710196a.chunk.js",
+    "main.js.map": "/dentist/static/js/main.6710196a.chunk.js.map",
     "runtime-main.js": "/dentist/static/js/runtime-main.ae535b05.js",
     "runtime-main.js.map": "/dentist/static/js/runtime-main.ae535b05.js.map",
     "static/js/2.ec751ef8.chunk.js": "/dentist/static/js/2.ec751ef8.chunk.js",
@@ -22,6 +22,10 @@
     "static/media/email.e84aa252.svg": "/dentist/static/media/email.e84aa252.svg",
     "static/media/facebook.6083d5ac.svg": "/dentist/static/media/facebook.6083d5ac.svg",
     "static/media/hours.f8c4b7bb.svg": "/dentist/static/media/hours.f8c4b7bb.svg",
+    "static/media/lato-v17-latin-ext-700.0421cae9.woff": "/dentist/static/media/lato-v17-latin-ext-700.0421cae9.woff",
+    "static/media/lato-v17-latin-ext-700.092a3109.eot": "/dentist/static/media/lato-v17-latin-ext-700.092a3109.eot",
+    "static/media/lato-v17-latin-ext-700.506aaf7f.woff2": "/dentist/static/media/lato-v17-latin-ext-700.506aaf7f.woff2",
+    "static/media/lato-v17-latin-ext-700.f73775c0.ttf": "/dentist/static/media/lato-v17-latin-ext-700.f73775c0.ttf",
     "static/media/location-vector.7bdddb0b.svg": "/dentist/static/media/location-vector.7bdddb0b.svg",
     "static/media/location.8650521b.svg": "/dentist/static/media/location.8650521b.svg",
     "static/media/logo.268f1dbf.svg": "/dentist/static/media/logo.268f1dbf.svg",
@@ -30,6 +34,14 @@
     "static/media/office-vector.2853fce1.svg": "/dentist/static/media/office-vector.2853fce1.svg",
     "static/media/office.787a4a12.svg": "/dentist/static/media/office.787a4a12.svg",
     "static/media/phone.7c6f4440.svg": "/dentist/static/media/phone.7c6f4440.svg",
+    "static/media/roboto-v27-latin-ext-700.02efd1dc.woff2": "/dentist/static/media/roboto-v27-latin-ext-700.02efd1dc.woff2",
+    "static/media/roboto-v27-latin-ext-700.1b274fb0.woff": "/dentist/static/media/roboto-v27-latin-ext-700.1b274fb0.woff",
+    "static/media/roboto-v27-latin-ext-700.96fb238c.ttf": "/dentist/static/media/roboto-v27-latin-ext-700.96fb238c.ttf",
+    "static/media/roboto-v27-latin-ext-700.adad44ff.eot": "/dentist/static/media/roboto-v27-latin-ext-700.adad44ff.eot",
+    "static/media/roboto-v27-latin-ext-regular.15f198bc.ttf": "/dentist/static/media/roboto-v27-latin-ext-regular.15f198bc.ttf",
+    "static/media/roboto-v27-latin-ext-regular.5bfc683d.woff": "/dentist/static/media/roboto-v27-latin-ext-regular.5bfc683d.woff",
+    "static/media/roboto-v27-latin-ext-regular.671b8a33.woff2": "/dentist/static/media/roboto-v27-latin-ext-regular.671b8a33.woff2",
+    "static/media/roboto-v27-latin-ext-regular.bf67d9a0.eot": "/dentist/static/media/roboto-v27-latin-ext-regular.bf67d9a0.eot",
     "static/media/services-vector.2eab080a.svg": "/dentist/static/media/services-vector.2eab080a.svg",
     "static/media/services.0672ee28.svg": "/dentist/static/media/services.0672ee28.svg",
     "static/media/woman.06c2a021.svg": "/dentist/static/media/woman.06c2a021.svg"
@@ -37,6 +49,6 @@
   "entrypoints": [
     "static/js/runtime-main.ae535b05.js",
     "static/js/2.ec751ef8.chunk.js",
-    "static/js/main.a8787477.chunk.js"
+    "static/js/main.6710196a.chunk.js"
   ]
 }
