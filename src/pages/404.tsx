@@ -1,31 +1,22 @@
 import { ReactComponent as PageNotFoundSvg } from 'assets/svg/404.svg';
 import { Button } from 'components/atoms/Button';
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
-const hoverAnimation = {
-  buttonHover: {
-    backgroundColor: '#40A3F8',
-    rotateZ: 360,
-  },
-};
 
 const NotFound = () => {
   return (
     <PageWrapper>
       <StyledSvg />
       <h1>Nie znaleziono takiej strony!</h1>
-      <ButtonWrapper whileHover={hoverAnimation.buttonHover}>
-        <Button as={Link} to='/'>
-          Strona Główna
-        </Button>
-      </ButtonWrapper>
+
+      <StyledButton as={Link} to='/'>
+        Strona Główna
+      </StyledButton>
     </PageWrapper>
   );
 };
 
-const PageWrapper = styled(motion.div)`
+const PageWrapper = styled.div`
   width: 100%;
   min-height: 80vh;
   display: flex;
@@ -54,14 +45,8 @@ const PageWrapper = styled(motion.div)`
   }
 `;
 
-const ButtonWrapper = styled(motion.div)`
-  border: 2px solid ${({ theme }) => theme.blue};
-  border-radius: 15px;
-  margin-top: 3rem;
-
-  @media (min-width: 768px) {
-    padding: 1rem 2rem;
-  }
+const StyledButton = styled(Button)`
+  margin-top: 2rem;
 `;
 
 const StyledSvg = styled(PageNotFoundSvg)`

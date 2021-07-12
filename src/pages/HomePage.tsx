@@ -1,5 +1,6 @@
 import HeaderSection from 'components/molecules/HeaderSection';
 import HomeList from 'components/organisms/HomeList';
+
 import { ReactComponent as DoctorSvg } from 'assets/svg/doctor.svg';
 import { ReactComponent as Facebook } from 'assets/svg/facebook.svg';
 import styled from 'styled-components';
@@ -13,7 +14,7 @@ interface HeaderSectionData {
 
 const headerSectionData: HeaderSectionData = {
   description:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam delectus veniam ea dignissimos cumque esse asperiores eos beatae qui!',
+    'W oparciu o swoje wieloletnie doświadczenie, chciałem stworzyć gabinet, który jest przede wszystkim przyjazny dla moich pacjentów. W swojej pracy zwracam uwagę przede wszystkim na rzetelność. Nie pracuję ,, na czas’’. Chcę, aby każdy po wizycie w moim gabinecie, wyszedł z uśmiechem na twarzy. To sprawia mi największą satysfakcję.',
   title: 'Lekarz Stomatologii',
   header: 'Witold Kozanecki',
   Svg: DoctorSvg,

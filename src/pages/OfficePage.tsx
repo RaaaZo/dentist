@@ -1,5 +1,5 @@
-import HeaderSection from 'components/molecules/HeaderSection';
 import { ReactComponent as OfficeSvg } from 'assets/svg/office.svg';
+import HeaderSection from 'components/molecules/HeaderSection';
 import OfficeCardWithImage from 'components/organisms/OfficeCardWithImage';
 
 interface HeaderSectionData {
@@ -10,7 +10,7 @@ interface HeaderSectionData {
 
 const headerSectionData: HeaderSectionData = {
   description:
-    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam delectus veniam ea dignissimos cumque esse asperiores eos beatae qui!',
+    'Otwierając swój gabinet, miałem na uwadze dobro swoich Pacjentów, dlatego też wyposażyłem go w różnorodne materiały, zarówno pochodzące z Polski jak i spoza granic kraju. Dzięki temu jestem w stanie zapewnić Państwu jak najlepszą opiekę. Nieustannie stawiam na jakość sprzętu medycznego.',
   title: 'Gabinet',
   Svg: OfficeSvg,
 };
