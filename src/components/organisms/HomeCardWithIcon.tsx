@@ -29,6 +29,7 @@ const HomeCardWithIcon: React.FC<Props> = ({
       </SvgWrapper>
 
       <Card
+        isHome={true}
         key={id}
         description={description}
         id={id}

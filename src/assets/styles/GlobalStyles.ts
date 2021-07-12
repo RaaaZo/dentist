@@ -1,6 +1,58 @@
 import { createGlobalStyle } from 'styled-components';
+import RobotoWoff2 from 'assets/fonts/roboto-v27-latin-ext-regular.woff2';
+import RobotoTtf from 'assets/fonts/roboto-v27-latin-ext-regular.ttf';
+import RobotoEot from 'assets/fonts/roboto-v27-latin-ext-regular.eot';
+import RobotoWoff from 'assets/fonts/roboto-v27-latin-ext-regular.woff';
+
+import RobotoBoldWoff2 from 'assets/fonts/roboto-v27-latin-ext-700.woff2';
+import RobotoBoldTtf from 'assets/fonts/roboto-v27-latin-ext-700.ttf';
+import RobotoBoldEot from 'assets/fonts/roboto-v27-latin-ext-700.eot';
+import RobotoBoldWoff from 'assets/fonts/roboto-v27-latin-ext-700.woff';
+
+import LatoWoff2 from 'assets/fonts/lato-v17-latin-ext-700.woff2';
+import LatoWoff from 'assets/fonts/lato-v17-latin-ext-700.ttf';
+import LatoTtf from 'assets/fonts/lato-v17-latin-ext-700.eot';
+import LatoEot from 'assets/fonts/lato-v17-latin-ext-700.woff';
 
 const GlobalStyles = createGlobalStyle`
+    @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(${RobotoWoff2}); 
+    src: local(''),
+        url(${RobotoEot}) format('embedded-opentype'), 
+        url(${RobotoWoff2}) format('woff2'), 
+        url(${RobotoWoff}) format('woff'), 
+        url(${RobotoTtf}) format('truetype'), 
+    }
+
+    @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(${RobotoBoldWoff2}); 
+    src: local(''),
+        url(${RobotoBoldEot}) format('embedded-opentype'), 
+        url(${RobotoBoldWoff2}) format('woff2'), 
+        url(${RobotoBoldWoff}) format('woff'), 
+        url(${RobotoBoldTtf}) format('truetype'), 
+    }
+
+    @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(${LatoWoff2}); 
+        src: local(''),
+        url(${LatoEot}) format('embedded-opentype'), 
+        url(${LatoWoff2}) format('woff2'), 
+        url(${LatoWoff}) format('woff'), 
+        url(${LatoTtf}) format('truetype'), 
+    }
 
     * {
         box-sizing: border-box;

@@ -8,15 +8,23 @@ interface Props {
   link?: string;
   Icon: any;
   id: string;
+  isHome?: boolean;
 }
 
 interface CardWrapperInterface {
   inverted: boolean;
+  isHome?: boolean;
 }
 
-const Card: React.FC<Props> = ({ inverted, description, link, Icon }) => {
+const Card: React.FC<Props> = ({
+  inverted,
+  description,
+  link,
+  Icon,
+  isHome,
+}) => {
   return (
-    <CardWrapper inverted={inverted}>
+    <CardWrapper isHome={isHome} inverted={inverted}>
       <InnerWrapper>
         <Icon />
         <p>{description}</p>
@@ -34,13 +42,17 @@ const Card: React.FC<Props> = ({ inverted, description, link, Icon }) => {
 const CardWrapper = styled.div<CardWrapperInterface>`
   position: relative;
   width: 100%;
-  height: 400px;
+  height: ${({ isHome }) => (isHome ? '500px' : '400px')};
   margin: 5rem 1rem;
 
   @media (min-width: 768px) {
     width: 50%;
     max-width: 650px;
     order: ${({ inverted }) => (inverted ? 1 : 2)};
+  }
+
+  @media (min-width: 1024px) {
+    height: 400px;
   }
 `;
 

@@ -23,7 +23,7 @@ const ServiceCard: React.FC<Props> = ({ link, title }) => {
 
 const ServiceWrapper = styled.div`
   width: 95%;
-  max-width: 300px;
+  max-width: 500px;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -41,6 +41,7 @@ const ServiceWrapper = styled.div`
 
   @media (min-width: 768px) {
     height: 300px;
+    max-width: 320px;
   }
 
   @media (min-width: 1024px) {
