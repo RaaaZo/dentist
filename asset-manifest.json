@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/dentist/static/js/main.284d905e.chunk.js",
-    "main.js.map": "/dentist/static/js/main.284d905e.chunk.js.map",
+    "main.js": "/dentist/static/js/main.9e69344e.chunk.js",
+    "main.js.map": "/dentist/static/js/main.9e69344e.chunk.js.map",
     "runtime-main.js": "/dentist/static/js/runtime-main.ae535b05.js",
     "runtime-main.js.map": "/dentist/static/js/runtime-main.ae535b05.js.map",
     "static/js/2.ec751ef8.chunk.js": "/dentist/static/js/2.ec751ef8.chunk.js",
@@ -17,6 +17,9 @@
     "static/media/4-small-min.6e5c6b9e.webp": "/dentist/static/media/4-small-min.6e5c6b9e.webp",
     "static/media/404.d9c149e1.svg": "/dentist/static/media/404.d9c149e1.svg",
     "static/media/5-small-min.fdf25ec7.webp": "/dentist/static/media/5-small-min.fdf25ec7.webp",
+    "static/media/7-small.f4583c7e.webp": "/dentist/static/media/7-small.f4583c7e.webp",
+    "static/media/8-small.d886e197.webp": "/dentist/static/media/8-small.d886e197.webp",
+    "static/media/9-small.5f5d550f.webp": "/dentist/static/media/9-small.5f5d550f.webp",
     "static/media/building-vector.aa58e897.svg": "/dentist/static/media/building-vector.aa58e897.svg",
     "static/media/building.d8828620.svg": "/dentist/static/media/building.d8828620.svg",
     "static/media/contact.9fc92228.svg": "/dentist/static/media/contact.9fc92228.svg",
@@ -51,6 +54,6 @@
   "entrypoints": [
     "static/js/runtime-main.ae535b05.js",
     "static/js/2.ec751ef8.chunk.js",
-    "static/js/main.284d905e.chunk.js"
+    "static/js/main.9e69344e.chunk.js"
   ]
 }
