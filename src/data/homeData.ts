@@ -1,9 +1,9 @@
 import { ReactComponent as BuildingIcon } from 'assets/svg/building-vector.svg';
 import { ReactComponent as Building } from 'assets/svg/building.svg';
-import { ReactComponent as Woman } from 'assets/svg/woman.svg';
 import { ReactComponent as Dentist } from 'assets/svg/dentist.svg';
 import { ReactComponent as LocationIcon } from 'assets/svg/location-vector.svg';
 import { ReactComponent as Location } from 'assets/svg/location.svg';
+import { ReactComponent as Woman } from 'assets/svg/woman.svg';
 
 interface ListOfTopics {
   id: string;

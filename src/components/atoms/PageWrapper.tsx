@@ -6,6 +6,7 @@ const PageWrapper: React.FC = ({ children }) => {
 
 const PageWrapperComponent = styled.div`
   width: 100%;
+  max-width: 2000px;
   min-height: 90vh;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.7);

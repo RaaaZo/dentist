@@ -1,12 +1,12 @@
-import { servicesData } from 'data/servicesData';
-import { useHistory, useParams } from 'react-router-dom';
-import styled from 'styled-components';
 import largeImage from 'assets/images/2-large-min.webp';
 import mediumImage from 'assets/images/2-medium-min.webp';
 import smallImage from 'assets/images/2-small-min.webp';
+import { Button } from 'components/atoms/Button';
+import { servicesData } from 'data/servicesData';
+import { useHistory, useParams } from 'react-router-dom';
+import styled from 'styled-components';
 
 import NotFound from './404';
-import { Button } from 'components/atoms/Button';
 
 const SingleServicePage = () => {
   const { push } = useHistory();
