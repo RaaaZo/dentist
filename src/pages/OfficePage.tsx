@@ -2,6 +2,7 @@ import { ReactComponent as OfficeSvg } from 'assets/svg/office.svg';
 import HeaderSection from 'components/molecules/HeaderSection';
 import OfficeCardWithImage from 'components/organisms/OfficeCardWithImage';
 import { officeData } from 'data/officeData';
+import styled from 'styled-components';
 
 interface HeaderSectionData {
   title: string;
@@ -11,7 +12,7 @@ interface HeaderSectionData {
 
 const headerSectionData: HeaderSectionData = {
   description:
-    'Otwierając swój gabinet, miałem na uwadze dobro swoich Pacjentów, dlatego też wyposażyłem go w różnorodne materiały, zarówno pochodzące z Polski jak i spoza granic kraju. Dzięki temu jestem w stanie zapewnić Państwu jak najlepszą opiekę. Nieustannie stawiam na jakość sprzętu medycznego.',
+    'Otwierając swój gabinet, miałem na uwadze dobro swoich Pacjentów. Dlatego też wyposażyłem go w najwyższej klasy sprzęt, dzięki któremu jestem w stanie zapewnić państwu najlepszą opiekę i szeroki zakres usług stomatologicznych.',
   title: 'Gabinet',
   Svg: OfficeSvg,
 };
@@ -24,16 +25,30 @@ const OfficePage = () => {
         title={headerSectionData.title}
         Svg={headerSectionData.Svg}
       />
-      {officeData.map(({ image, inverted, text }, index) => (
-        <OfficeCardWithImage
-          key={index}
-          image={image}
-          inverted={inverted}
-          text={text}
-        />
-      ))}
+      <Wrapper>
+        {officeData.map(({ image }, index) => (
+          <OfficeCardWithImage key={index} image={image} />
+        ))}
+      </Wrapper>
     </>
   );
 };
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+
+  @media (min-width: 768px) {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  @media (min-width: 1360px) {
+    margin: 7rem 0;
+  }
+`;
 
 export default OfficePage;

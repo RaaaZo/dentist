@@ -20,7 +20,7 @@ const FooterWrapper = styled.footer`
 
   h3 {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   a {

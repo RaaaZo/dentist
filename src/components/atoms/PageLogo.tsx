@@ -17,7 +17,8 @@ const StyledLogo = styled(Logo)`
 
   @media (min-width: 1024px) {
     display: block;
-    margin: 1rem 2.5%;
+    min-width: 200px;
+    margin: 1rem 1.5%;
     cursor: pointer;
   }
 `;

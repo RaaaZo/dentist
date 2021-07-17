@@ -1,8 +1,9 @@
 import { servicesData } from 'data/servicesData';
 import { useHistory, useParams } from 'react-router-dom';
 import styled from 'styled-components';
-import largeImage from 'assets/images/3-large.webp';
-import smallImage from 'assets/images/3-small.webp';
+import largeImage from 'assets/images/2-large-min.webp';
+import mediumImage from 'assets/images/2-medium-min.webp';
+import smallImage from 'assets/images/2-small-min.webp';
 
 import NotFound from './404';
 import { Button } from 'components/atoms/Button';
@@ -22,9 +23,10 @@ const SingleServicePage = () => {
     <PageWrapper>
       <ImageWrapper>
         <Image
-          srcSet={`${smallImage} 780w, ${largeImage} 1920w`}
+          srcSet={`${smallImage} 800w, ${mediumImage} 1920w, ${largeImage} 3024w`}
           sizes='(max-width: 780px) 780px,
-            1920px'
+                (max-width: 1600px) 1920px,
+                3024px'
           src={largeImage}
           alt='Doctors office'
         />
@@ -47,15 +49,19 @@ const StyledButton = styled(Button)`
 
 const ImageWrapper = styled.div`
   width: 100%;
-  height: 300px;
+  height: 250px;
   background-color: ${({ theme }) => theme.grey};
 
   @media (min-width: 780px) {
-    height: 500px;
+    height: 350px;
   }
 
   @media (min-width: 1360px) {
-    height: 700px;
+    height: 450px;
+  }
+
+  @media (min-width: 1680px) {
+    height: 500px;
   }
 `;
 

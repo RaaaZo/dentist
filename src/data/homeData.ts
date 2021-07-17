@@ -22,7 +22,7 @@ export const listOfTopics: ListOfTopics[] = [
     id: '0675420c-714b-11eb-9439-0242ac130002',
     icon: Dentist,
     description:
-      'Moje doświadczenie pozwoliło mi na zapewnienie swoim Pacjentom szeregu usług stomatologicznych, poczynając od najbardziej popularnych- stomatologii zachowawczej czy endodoncji, aż po stomatologię protetyczną. Chcę pomóc każdemu pacjentowi, który się do mnie zgłosi.',
+      'Moje doświadczenie pozwoliło mi na zapewnienie swoim pacjentom szeregu usług stomatologicznych, poczynając od najbardziej popularnych, takich jak stomatologia zachowawcza czy endodoncja, aż po stomatologię protetyczną. To wszystko dlatego, że chcę pomóc każdemu pacjentowi, który się do mnie zgłosi.',
     link: '/uslugi',
     svg: Woman,
     inverted: false,
@@ -31,7 +31,7 @@ export const listOfTopics: ListOfTopics[] = [
     id: '067544a0-714b-11eb-9439-0242ac130002',
     icon: BuildingIcon,
     description:
-      'Otwierając swój gabinet, miałem na uwadze dobro swoich Pacjentów, dlatego też wyposażyłem go w różnorodne materiały, zarówno pochodzące z Polski jak i spoza granic kraju. Dzięki temu jestem w stanie zapewnić Państwu jak najlepszą opiekę. Nieustannie stawiam na jakość sprzętu medycznego.',
+      'Otwierając swój gabinet, miałem na uwadze dobro swoich Pacjentów. Dlatego też wyposażyłem go w najwyższej klasy sprzęt, dzięki któremu jestem w stanie zapewnić państwu najlepszą opiekę i szeroki zakres usług stomatologicznych.',
     link: '/gabinet',
     svg: Building,
     inverted: true,
@@ -40,7 +40,7 @@ export const listOfTopics: ListOfTopics[] = [
     id: '06755e5e-714b-11eb-9439-0242ac130002',
     icon: LocationIcon,
     description:
-      'Aby sprostać Państwa oczekiwaniom, proponujemy zarówno poranne jak i wieczorne godziny przyjęć.',
+      'Jesteśmy dla państwa otwarci zarówno w godzinach porannych jak i wieczornych, aby dopasować się nawet do najbardziej wymagających klientów.',
     link: '/kontakt',
     svg: Location,
     inverted: false,

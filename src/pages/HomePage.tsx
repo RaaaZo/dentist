@@ -14,9 +14,9 @@ interface HeaderSectionData {
 
 const headerSectionData: HeaderSectionData = {
   description:
-    'W oparciu o swoje wieloletnie doświadczenie, chciałem stworzyć gabinet, który jest przede wszystkim przyjazny dla moich pacjentów. W swojej pracy zwracam uwagę przede wszystkim na rzetelność. Nie pracuję ,, na czas’’. Chcę, aby każdy po wizycie w moim gabinecie, wyszedł z uśmiechem na twarzy. To sprawia mi największą satysfakcję.',
-  title: 'Lekarz Stomatologii',
-  header: 'Witold Kozanecki',
+    'W oparciu o swoje wieloletnie doświadczenie stworzyłem gabinet wyposażony w najwyższej klasy sprzęt stomatologiczny, który pozwala mi w pełni zaspokoić potrzeby pacjentów, a także zatroszczyć się o nich . W swojej pracy zwracam uwagę przede wszystkim na rzetelność. Chcę, aby każdy po wizycie w moim gabinecie, wyszedł z uśmiechem na twarzy. To sprawia mi największą satysfakcję.',
+  title: 'Prywatny Gabinet Stomatologiczny',
+  header: 'Lek. Stom. Witold Kozanecki',
   Svg: DoctorSvg,
 };
 
@@ -34,7 +34,7 @@ const HomePage = () => {
       <HomeList />
 
       <SocialMediaWrapper>
-        <a href=''>
+        <a href='https://www.facebook.com/VitaDentTorunWitoldKozanecki'>
           <h4>Odwiedź nas również na</h4>
           <Facebook />
           <h4>i zobacz co u nas słychać!</h4>

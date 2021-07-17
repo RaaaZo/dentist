@@ -10,7 +10,7 @@ interface HeaderSectionData {
 
 const headerSectionData: HeaderSectionData = {
   description:
-    'Moje doświadczenie pozwoliło mi na zapewnienie swoim Pacjentom szeregu usług stomatologicznych, poczynając od najbardziej popularnych- stomatologii zachowawczej czy endodoncji, aż po stomatologię protetyczną. Chcę pomóc każdemu pacjentowi, który się do mnie zgłosi.',
+    'Moje doświadczenie pozwoliło mi na zapewnienie swoim pacjentom szeregu usług stomatologicznych, poczynając od najbardziej popularnych, takich jak stomatologia zachowawcza czy endodoncja, aż po stomatologię protetyczną. To wszystko dlatego, że chcę pomóc każdemu pacjentowi, który się do mnie zgłosi.',
   title: 'Usługi',
   Svg: ServicesSvg,
 };

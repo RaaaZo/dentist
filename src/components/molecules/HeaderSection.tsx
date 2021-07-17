@@ -80,7 +80,7 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
   h1,
   h2 {
     margin-top: ${(props) => (props.home ? '2rem' : 0)};
-    font-size: ${(props) => (props.home ? '2.5rem' : '3rem')};
+    font-size: ${(props) => (props.home ? '1.8rem' : '3rem')};
   }
 
   p {
@@ -92,7 +92,7 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
 
     h1,
     h2 {
-      font-size: 3rem;
+      font-size: 2.2rem;
     }
   }
 
@@ -104,7 +104,7 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
 
     h1,
     h2 {
-      font-size: 4rem;
+      font-size: 3rem;
       margin: 1rem auto;
     }
 
@@ -121,7 +121,7 @@ const StyledHeaderWrapper = styled.div<{ home?: boolean }>`
 const StyledParagraph = styled.p`
   text-align: justify;
 
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: 8rem;
   padding-left: 2rem;
   padding-right: 2rem;

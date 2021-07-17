@@ -1,4 +1,4 @@
-import { ReactComponent as LogoSvg } from 'assets/svg/menu-logo.svg';
+import { ReactComponent as LogoSvg } from 'assets/svg/logo.svg';
 import { ReactComponent as MenuSvg } from 'assets/svg/menu.svg';
 import ListItem from 'components/atoms/ListItem';
 import { motion, useCycle } from 'framer-motion';
@@ -83,8 +83,6 @@ const Drawer = styled(motion.div)`
 `;
 
 const StyledLogo = styled(LogoSvg)`
-  cursor: pointer;
-
   @media (orientation: landscape) and (max-width: 667px) {
     display: none;
   }
@@ -96,7 +94,7 @@ const StyledLogo = styled(LogoSvg)`
 
 const LinkList = styled(motion.ul)`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,6 +136,7 @@ const Nav = styled(motion.nav)`
 const MenuModal = styled(motion.div)`
   position: fixed;
   width: 100%;
+  height: 100%;
   top: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.8);

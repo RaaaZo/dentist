@@ -15,7 +15,7 @@ export const contactData: Data[] = [
   {
     id: 2,
     Icon: Hours,
-    hours: 'Poniedziałek-Czwartek: 10:30- 18:30',
+    hours: `Pon - czw: 10:30- 18:30`,
   },
   { id: 3, Icon: Email, email: 'stomatolog@vitadent-kozanecki.pl' },
 ];

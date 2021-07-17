@@ -25,7 +25,7 @@ const ContactCard: React.FC<Props> = ({ Icon, email, hours, phone }) => {
 };
 
 const CardWrapper = styled.div`
-  width: 95%;
+  width: 100%;
   max-width: 350px;
   height: 400px;
   background-color: rgba(255, 255, 255, 255, 0.8);
@@ -52,8 +52,19 @@ const CardWrapper = styled.div`
   }
 
   a {
+    font-size: 1.7rem;
+    text-align: center;
     font-weight: bold;
     text-decoration: none;
+    transition: all 0.4s linear;
+
+    @media (min-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  & a:hover {
+    color: ${({ theme }) => theme.darkBlue};
   }
 
   h3 {
