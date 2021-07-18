@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import PageLogo from 'components/atoms/PageLogo';
 import ListItem from 'components/atoms/ListItem';
+import PageLogo from 'components/atoms/PageLogo';
+import styled from 'styled-components';
 
 const DesktopNavigation = () => {
   return (
@@ -23,6 +23,7 @@ const Wrapper = styled.div`
   @media (min-width: 1024px) {
     display: flex;
     align-items: center;
+    max-width: 2000px;
   }
 `;
 
