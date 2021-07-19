@@ -1,6 +1,6 @@
-import { ReactComponent as Phone } from 'assets/svg/phone.svg';
-import { ReactComponent as Hours } from 'assets/svg/hours.svg';
 import { ReactComponent as Email } from 'assets/svg/email.svg';
+import { ReactComponent as Hours } from 'assets/svg/hours.svg';
+import { ReactComponent as Phone } from 'assets/svg/phone.svg';
 
 interface Data {
   Icon: any;
@@ -11,7 +11,7 @@ interface Data {
 }
 
 export const contactData: Data[] = [
-  { id: 1, Icon: Phone, phone: ['509-949-202', '730-998-577 '] },
+  { id: 1, Icon: Phone, phone: ['509-949-202'] },
   {
     id: 2,
     Icon: Hours,

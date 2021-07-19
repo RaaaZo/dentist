@@ -1,18 +1,16 @@
-import { createGlobalStyle } from 'styled-components';
-import RobotoWoff2 from 'assets/fonts/roboto-v27-latin-ext-regular.woff2';
-import RobotoTtf from 'assets/fonts/roboto-v27-latin-ext-regular.ttf';
-import RobotoEot from 'assets/fonts/roboto-v27-latin-ext-regular.eot';
-import RobotoWoff from 'assets/fonts/roboto-v27-latin-ext-regular.woff';
-
-import RobotoBoldWoff2 from 'assets/fonts/roboto-v27-latin-ext-700.woff2';
-import RobotoBoldTtf from 'assets/fonts/roboto-v27-latin-ext-700.ttf';
-import RobotoBoldEot from 'assets/fonts/roboto-v27-latin-ext-700.eot';
-import RobotoBoldWoff from 'assets/fonts/roboto-v27-latin-ext-700.woff';
-
-import LatoWoff2 from 'assets/fonts/lato-v17-latin-ext-700.woff2';
-import LatoWoff from 'assets/fonts/lato-v17-latin-ext-700.ttf';
 import LatoTtf from 'assets/fonts/lato-v17-latin-ext-700.eot';
+import LatoWoff from 'assets/fonts/lato-v17-latin-ext-700.ttf';
 import LatoEot from 'assets/fonts/lato-v17-latin-ext-700.woff';
+import LatoWoff2 from 'assets/fonts/lato-v17-latin-ext-700.woff2';
+import RobotoBoldEot from 'assets/fonts/roboto-v27-latin-ext-700.eot';
+import RobotoBoldTtf from 'assets/fonts/roboto-v27-latin-ext-700.ttf';
+import RobotoBoldWoff from 'assets/fonts/roboto-v27-latin-ext-700.woff';
+import RobotoBoldWoff2 from 'assets/fonts/roboto-v27-latin-ext-700.woff2';
+import RobotoEot from 'assets/fonts/roboto-v27-latin-ext-regular.eot';
+import RobotoTtf from 'assets/fonts/roboto-v27-latin-ext-regular.ttf';
+import RobotoWoff from 'assets/fonts/roboto-v27-latin-ext-regular.woff';
+import RobotoWoff2 from 'assets/fonts/roboto-v27-latin-ext-regular.woff2';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
     @font-face {
@@ -63,12 +61,12 @@ const GlobalStyles = createGlobalStyle`
         font-size: 10px;
         overflow-x: hidden;
         line-height: 1.5;
-        
+        background: ${({ theme }) =>
+          ` linear-gradient(270deg, ${theme.backgroundDark} -1.88%, ${theme.backgroundLight} 100.76%)`};
     }
 
     body {
-        background: ${({ theme }) =>
-          ` linear-gradient(270deg, ${theme.backgroundDark} -1.88%, ${theme.backgroundLight} 100.76%)`};
+        
         font-size: 2rem;
         font-family: ${({ theme }) => theme.roboto};
         color: ${({ theme }) => theme.black};
